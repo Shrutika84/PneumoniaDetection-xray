@@ -15,6 +15,7 @@ A full-stack deep learning project to detect Pneumonia from chest X-ray images u
 ---
 ## Results
 ![image](https://github.com/user-attachments/assets/42339505-009e-44e0-aea2-2b8a3d420711)
+![image](https://github.com/user-attachments/assets/df494bbc-c0cd-4d36-917e-a85493ee93b9)
 
 
 ## 📊 Dataset
