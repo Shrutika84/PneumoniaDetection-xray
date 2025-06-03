@@ -6,10 +6,10 @@ from PIL import Image
 class RGBDataset(datasets.ImageFolder):
     def __getitem__(self, index):
         path, label = self.samples[index]
-        image = self.loader(path).convert("RGB")  # 🔥 force RGB
+        image = self.loader(path).convert("RGB")  
         if self.transform is not None:
             image = self.transform(image)
-        print(f"[DEBUG] Loaded image shape: {image.shape}")  # Should be [3, 224, 224]
+        print(f"[DEBUG] Loaded image shape: {image.shape}")  
         return image, label
 
 def get_data_loaders(data_dir, batch_size=32, img_size=224):
