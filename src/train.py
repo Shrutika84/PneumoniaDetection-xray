@@ -47,7 +47,7 @@ def train_model(model, train_loader, val_loader, device, epochs=10, lr=1e-4, sav
         if val_acc > best_val_acc:
             best_val_acc = val_acc
             torch.save(model.state_dict(), save_path)
-            print(f'💾 Best model saved with accuracy: {val_acc:.2f}%\n')
+            print(f' Best model saved with accuracy: {val_acc:.2f}%\n')
 
 
 def evaluate_model(model, data_loader, device):
@@ -62,7 +62,7 @@ def evaluate_model(model, data_loader, device):
         for images, labels in data_loader:
             images, labels = images.to(device), labels.to(device)
 
-            # 🔥 Force 3-channel in case any are grayscale
+            # Force 3-channel 
             if images.shape[1] == 1:
                 images = images.repeat(1, 3, 1, 1)
 
