@@ -15,8 +15,8 @@ from train import train_model
 
 def main():
     # --- Configs ---
-    DATA_DIR = 'data/chest_xray'  # Update this if your dataset is elsewhere
-    MODEL_TYPE = 'efficientnet'  # Options: 'custom', 'efficientnet'
+    DATA_DIR = 'data/chest_xray'  
+    MODEL_TYPE = 'efficientnet' 
     BATCH_SIZE = 32
     IMG_SIZE = 224
     EPOCHS = 10
@@ -25,7 +25,7 @@ def main():
     DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # --- Prepare Data ---
-    print("🔄 Loading data...")
+    print(" Loading data...")
     train_loader, val_loader, _ = get_data_loaders(DATA_DIR, BATCH_SIZE, IMG_SIZE)
 
     # --- Build Model ---
