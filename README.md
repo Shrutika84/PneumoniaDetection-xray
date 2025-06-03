@@ -10,7 +10,7 @@ A full-stack deep learning project to detect Pneumonia from chest X-ray images u
 - 🧠 Model: EfficientNet-B0 (transfer learning)
 - 📊 Evaluation: Accuracy, Precision, Confusion Matrix
 - 🖼️ Streamlit app for real-time predictions
-- ✅ Trained on Kaggle dataset with >95% accuracy
+- ✅ Trained on Kaggle dataset with >85% accuracy
 
 ---
 
