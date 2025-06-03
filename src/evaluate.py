@@ -29,7 +29,7 @@ def evaluate(model, test_loader, device):
             all_labels.extend(labels.cpu().numpy())
 
     # Classification Report
-    print("\n📊 Classification Report:")
+    print("\n Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=['Normal', 'Pneumonia']))
 
     # Confusion Matrix
